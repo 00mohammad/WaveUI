@@ -1,0 +1,24 @@
+{
+  "name": "wave-ui",
+  "version": "4.0.0",
+  "description": "A modern UI project with Tailwind CSS v4",
+  "type": "module",
+  "scripts": {
+    "dev": "postcss src/input.css -o dist/output.css --watch",
+    "build": "postcss src/input.css -o dist/output.css --no-map",
+    "preview": "python -m http.server 8000 --directory dist"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "postcss": "^8.5.15",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.3.1"
+  }
+}
