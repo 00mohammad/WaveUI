@@ -1,76 +1,78 @@
-# Wave UI - Tailwind CSS v4
+# 🌊 WaveUI
 
-پروژه Wave UI - رابط کاربری مدرن با Tailwind CSS نسخه 4
+A modern responsive frontend project built with **Tailwind CSS v4**, focused on converting a real-world Figma design into a pixel-perfect and fully responsive web experience.
 
-## ساختار پروژه
-
-```
-WaveUI/
-├── src/
-│   └── input.css          # فایل Tailwind اصلی
-├── dist/
-│   └── output.css         # فایل CSS کامپایل‌شده
-├── index.html             # صفحه HTML اصلی
-├── tailwind.config.js     # تنظیمات Tailwind
-├── postcss.config.js      # تنظیمات PostCSS
-└── package.json           # وابستگی‌ها و اسکریپت‌ها
-```
-
-## نصب و راه‌اندازی
-
-### 1️⃣ نصب وابستگی‌ها
-\`\`\`bash
-npm install
-\`\`\`
-
-### 2️⃣ توسعه (Development)
-\`\`\`bash
-npm run dev
-\`\`\`
-- Tailwind CSS را به صورت خودکار کامپایل می‌کند
-- فایل‌ها را مراقبت می‌کند و تغییرات را بروزرسانی می‌کند
-
-### 3️⃣ ساخت برای تولید (Production)
-\`\`\`bash
-npm run build
-\`\`\`
-- CSS را فشرده‌سازی می‌کند
-- برای استقرار آماده می‌کند
-
-### 4️⃣ پیش‌نمایش
-\`\`\`bash
-npm run preview
-\`\`\`
-- وب‌سایت را در پورت 8000 مشاهده می‌کنید
-
-## ویژگی‌ها
-
-✅ Tailwind CSS v4 - آخرین نسخه
-✅ پشتیبانی متن راست (RTL) - فارسی
-✅ Responsive Design - تمام دستگاه‌ها
-✅ Dark Mode آماده - می‌توان فعال کرد
-✅ تنظیمات شخصی‌سازی شده
-
-## رنگ‌های سفارشی
-
-\`\`\`javascript
-// tailwind.config.js
-theme: {
-  extend: {
-    colors: {
-      primary: '#3B82F6',
-      secondary: '#8B5CF6',
-    },
-  },
-}
-\`\`\`
-
-## نکات مهم
-
-- HTML فایل را باز کنید و شروع کنید!
-- تمام فایل‌های HTML را در \`content\` قرار دهید
-- رنگ‌ها و فونت‌ها را در \`tailwind.config.js\` سفارشی کنید
+This project demonstrates my ability to translate UI/UX designs into clean, scalable, and production-ready frontend code.
 
 ---
 
-حالا شما می‌توانید شروع کنید! 🚀
+## 🎨 Design
+
+🔗 Figma Design  
+https://www.figma.com/design/ZU81y6D1wp6ZKRBDpM0m58/-Discover-The-Water---Oceanica--Responsive-Live-Website---DesignCourse--Community--?node-id=0-1&p=f&t=enLWfLXJjUw8i1bP-0
+
+---
+
+## 🚀 Live Demo
+
+🟡 Coming soon  
+🔗 https://your-demo-link.com
+
+---
+
+## 📱 Responsive Design
+
+| Device | Preview |
+|--------|--------|
+| 🖥 Desktop (1440px+) | ![Desktop](./src/Screenshot/Desktop%20-%201440px.png) |
+| 💻 Tablet (1024px) | ![Tablet](./src/Screenshot/Tablet%20-%201024px.png) |
+| 📟 Small Tablet (744px) | ![Small Tablet](./src/Screenshot/Tablet%20(Small)%20-%20744px.png) |
+| 📱 Mobile (375px) | ![Mobile](./src/Screenshot/Mobile%20-%20375px.png) |
+
+---
+
+## 🛠 Tech Stack
+
+- HTML5
+- CSS3
+- Tailwind CSS v4
+- JavaScript (Vanilla)
+- npm
+- Tailwind CLI
+
+---
+
+## ✨ Key Highlights
+
+- Pixel-perfect implementation from Figma design
+- Fully responsive mobile-first layout
+- Clean and scalable Tailwind architecture
+- Real-world frontend development workflow
+
+---
+
+## 📚 What I Learned
+
+- Converting UI designs into functional code
+- Building responsive layouts across breakpoints
+- Improving Tailwind CSS workflow efficiency
+- Structuring maintainable frontend projects
+- Translating design systems into code
+
+---
+
+## 🚧 Roadmap
+
+- Deploy live demo (GitHub Pages / Vercel)
+- Add animations and micro-interactions
+- Convert into reusable UI components
+- Improve performance optimization
+- Add dark mode support
+
+---
+
+## 👨‍💻 About
+
+Frontend Developer focused on building modern, responsive, and user-friendly web interfaces.
+
+🔗 GitHub: https://github.com/00mohamma

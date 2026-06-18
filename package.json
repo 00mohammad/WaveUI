@@ -4,8 +4,8 @@
   "description": "A modern UI project with Tailwind CSS v4",
   "type": "module",
   "scripts": {
-    "dev": "postcss src/input.css -o dist/output.css --watch",
-    "build": "postcss src/input.css -o dist/output.css --no-map",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify",
     "preview": "python -m http.server 8000 --directory dist"
   },
   "keywords": [
