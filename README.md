@@ -75,4 +75,4 @@ https://www.figma.com/design/ZU81y6D1wp6ZKRBDpM0m58/-Discover-The-Water---Oceani
 
 Frontend Developer focused on building modern, responsive, and user-friendly web interfaces.
 
-🔗 GitHub: https://github.com/00mohamma
+🔗 GitHub: https://github.com/00mohammad
