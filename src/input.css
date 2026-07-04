@@ -2,14 +2,10 @@
 
 @theme {
   --color-primary: #68b1c8;
-
   --color-bg: #000408;
   --color-surface: #262c31;
-
-  --color-text: #ffffff;
   --color-muted: #838d9b;
-
-  --color-border: #d9d9d9;
+  --color-text: #d9d9d9;
 }
 
 body {

@@ -9,17 +9,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
 
-  <body class="bg-bg text-text">
-    <div class="bg-surface border border-border p-6">
-      <h1 class="text-primary text-3xl font-bold">Wave UI</h1>
-      <p class="text-muted">Modern Dark Interface</p>
-    </div>
+  <body class="bg-bg text-white font-[Manrope]">
+    <header
+      class="h-screen bg-center bg-cover bg-fixed"
+      style="background-image: url('./src/img/Frame1.png')">
+      <div class="h-full w-full bg-black/40">
+
+        <!-- Navbar -->
+        <nav
+          class="flex items-center justify-between px-[200px] py-[55px] lg:px-8 md:px-6 text-white">
+
+          <!-- Logo -->
+          <div class="flex items-center gap-x-2.5">
+            <img class="w-8 h-7" src="./src/svg/Mask group.svg" alt="Logo" />
+            <h1 class="text-4xl font-bold">Oceanica</h1>
+          </div>
+
+          <!-- Menu -->
+          <ul class="flex items-center w-full">
+
+            <ul
+              class="flex flex-1 justify-center gap-8 text-sm">
+              <li
+                class="cursor-pointer hover:text-primary md:gapx text-2xl">Home</li>
+              <li
+                class="hidden md:block cursor-pointer hover:text-primary text-2xl">Tours</li>
+              <li
+                class="hidden md:block cursor-pointer hover:text-primary text-2xl">Contact</li>
+            </ul>
+
+            <!-- right item -->
+            <li class="text-primary ml-auto font-bold cursor-pointer text-2xl">
+              Start a Journey
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+    </header>
 
     <script src="./src/script.js"></script>
   </body>
