@@ -7,6 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet" />
@@ -15,21 +16,20 @@
   </head>
 
   <body class="bg-bg font-[Manrope] text-white">
-
+    <!-- Header -->
     <header
       class="relative h-screen bg-cover bg-center bg-fixed"
-      style="background-image: url('./src/img/Frame1.png')">
-
+      style="background-image: url('./src/img/Frame1.png');">
       <!-- Navbar -->
       <nav
         class="relative z-20 flex items-center justify-between px-6 py-5 lg:px-8 lg:py-11 xl:px-[200px]">
-
         <!-- Logo -->
         <div class="flex items-center gap-2.5">
           <img
             src="./src/svg/Mask group.svg"
             alt="Oceanica Logo"
             class="h-7 w-8" />
+
           <h1 class="text-4xl font-bold">Oceanica</h1>
         </div>
 
@@ -39,22 +39,24 @@
           <li class="cursor-pointer transition-colors hover:text-primary">
             Home
           </li>
+
           <li class="cursor-pointer transition-colors hover:text-primary">
             Tours
           </li>
+
           <li class="cursor-pointer transition-colors hover:text-primary">
             Contact
           </li>
         </ul>
 
-        <!-- Desktop Button -->
+        <!-- Button -->
         <a
           href="#"
           class="ml-auto hidden text-2xl font-bold text-primary transition-opacity hover:opacity-80 md:block">
           Start a Journey
         </a>
 
-        <!-- Mobile Hamburger -->
+        <!-- Mobile Menu -->
         <button
           class="group ml-auto rounded-lg p-2 transition-colors md:hidden"
           aria-label="Open menu">
@@ -71,66 +73,92 @@
               d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-
       </nav>
-<!-- Hero -->
-<section
-  class="mt-10 px-6 lg:px-8 xl:px-[200px] flex flex-col lg:flex-row items-start justify-between gap-12">
 
-  <!-- Left Content -->
-  <div class="max-w-xl">
+      <!-- Hero -->
+      <section
+        class="mt-10 flex flex-col items-start justify-between gap-12 px-6 lg:flex-row lg:px-8 xl:px-[200px]">
+        <!-- Left Content -->
+        <div class="max-w-xl">
+          <h2
+            class="text-4xl font-bold leading-[1.1] sm:text-5xl md:text-center md:text-6xl lg:text-left lg:text-7xl">
+            Discover the
+            <span class="inline md:mt-3 md:block">water</span>
+          </h2>
 
-    <h2
-      class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] md:text-center lg:text-left">
-      Discover the
-      <span class="inline md:block md:mt-3">water</span>
-    </h2>
+          <p
+            class="mt-8 max-w-lg text-base leading-[1.7] text-gray-200 sm:text-lg md:text-center md:text-xl lg:text-left lg:text-2xl xl:text-3xl">
+            From pristine waters to majestic forests... we have it all.
+          </p>
+        </div>
 
-    <p
-      class="mt-8 max-w-lg text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-[1.7] font-normal text-gray-200 md:text-center lg:text-left">
-      From pristine waters to majestic forests... we have it all.
-    </p>
+        <!-- Glass Card -->
+        <div
+          class="w-full max-w-[580px] rounded-xl border border-white/15 bg-gradient-to-br from-black/15 to-black/50 p-6 shadow-2xl backdrop-blur-[25px] ">
+          <div class="flex flex-col gap-[30px] mt-10 ">
 
-  </div>
-  
+            <!-- Item -->
+            <div
+              class="group relative cursor-pointer overflow-hidden rounded-lg p-4 ">
+              <span
+                class="absolute inset-y-0 left-0 w-[7px] bg-text opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
 
-  <!-- Glass Card -->
-<div
-  class="w-full max-w-[520px] min-h-[260px] rounded-xl bg-gradient-to-br from-black/15 to-black/50 backdrop-blur-[25px] border border-white/15 shadow-2xl p-16 flex flex-col gap-8">
+              <div class="pl-6">
+                <h2 class="text-3xl font-medium">
+                  Saltwater Fishing
+                </h2>
 
-  <div>
-    <h2 class="text-3xl font-medium">Saltwater Fishing</h2>
-    <p class="mt-4 font-normal leading-7 text-gray-200">
-      Love fishing? With some of the best spots available year-round, from
-      coastline to the deep sea, you won’t be short for choice.
-    </p>
-  </div>
+                <p class="mt-4 leading-7 text-gray-200 max-w-[425px]">
+                  Love fishing? With some of the best spots available
+                  year-round,
+                  from coastline to the deep sea, you won’t be short for choice.
+                </p>
+              </div>
+            </div>
 
-  <div>
-    <h2 class="text-3xl font-medium">Forest Camping</h2>
-    <p class="mt-4 font-normal leading-7 text-gray-200">
-      Experience nature like never before with beautiful forests and peaceful
-      camping destinations.
-    </p>
-  </div>
+            <!-- Item -->
+            <div
+              class="group relative cursor-pointer overflow-hidden rounded-lg p-4">
+              <span
+                class="absolute inset-y-0 left-0 w-[7px] bg-text opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
 
-  <div>
-    <h2 class="text-3xl font-medium">Adventure Tours</h2>
-    <p class="mt-4 font-normal leading-7 text-gray-200">
-      Explore breathtaking landscapes and unforgettable adventures across
-      oceans, rivers, and mountains.
-    </p>
-  </div>
+              <div class="pl-6">
+                <h2 class="text-3xl font-medium">
+                  Marine Snorkelling
+                </h2>
 
-</div>
+                <p class="mt-4 leading-7 text-gray-200 max-w-[425px]">
+                  Go deep sea diving in some of the most pristine waters on the
+                  planet, from Costa Rica and the Canary Islands to Hawaii and
+                  Thailand.
+                </p>
+              </div>
+            </div>
 
+            <!-- Item -->
+            <div
+              class="group relative cursor-pointer overflow-hidden rounded-lg p-4">
+              <span
+                class="absolute inset-y-0 left-0 w-[7px] bg-text opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
 
-</section>
+              <div class="pl-6">
+                <h2 class="text-3xl font-medium">
+                  All-Day Parasailing
+                </h2>
 
-      </div>
+                <p class="mt-4 leading-7 text-gray-200 max-w-[425px]">
+                  Glide through the wide open, fresh air overlooking gorgeous
+                  open bodies of ocean water to sun-swept vistas and woodland
+                  hills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </header>
 
     <script src="./src/script.js"></script>
-
   </body>
 </html>
