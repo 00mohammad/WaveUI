@@ -11,3 +11,17 @@
 body {
   font-family: "Manrope";
 }
+
+.mySwiper {
+  width: 80%;
+  padding-bottom: 60px;
+}
+
+.mySwiper .swiper-slide {
+  width: 320px;
+}
+
+.mySwiper img {
+  width: 100%;
+  display: block;
+}
