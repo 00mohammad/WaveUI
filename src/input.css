@@ -13,15 +13,19 @@ body {
 }
 
 .mySwiper {
-  width: 80%;
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
   padding-bottom: 60px;
 }
 
 .mySwiper .swiper-slide {
-  width: 320px;
+  width: 327px !important;
+  height: auto;
 }
 
 .mySwiper img {
   width: 100%;
   display: block;
+  border-radius: 12px;
 }
