@@ -11,8 +11,9 @@
 body {
   font-family: "Manrope";
 }
-
+/* Mobile First */
 .mySwiper {
+<<<<<<< HEAD
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
@@ -29,3 +30,25 @@ body {
   display: block;
   border-radius: 12px;
 }
+=======
+  width: 80%;
+  padding-inline: 24px; /* فاصله چپ و راست */
+  padding-bottom: 60px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .mySwiper {
+    width: 75%;
+    padding-inline: 32px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .mySwiper {
+    width: 70%;
+    padding-inline: 45px;
+  }
+}
+>>>>>>> 4a476ec (Implement mobile-first Swiper layout (tablet pending))
