@@ -11,44 +11,43 @@
 body {
   font-family: "Manrope";
 }
-/* Mobile First */
+
+/* ===== Swiper (Mobile First) ===== */
+
 .mySwiper {
-<<<<<<< HEAD
-  width: 100%;
-  max-width: 1260px;
-  margin: 0 auto;
+  width: 80%;
+  padding-inline: 24px;
   padding-bottom: 60px;
+  margin-top: 100px;
 }
 
 .mySwiper .swiper-slide {
-  width: 327px !important;
+  width: 327px;
   height: auto;
 }
 
 .mySwiper img {
   width: 100%;
   display: block;
-  border-radius: 12px;
-}
-=======
-  width: 80%;
-  padding-inline: 24px; /* فاصله چپ و راست */
-  padding-bottom: 60px;
 }
 
-/* Tablet */
+.swiper-slide img {
+  width: 320px;
+  height: 180px;
+}
+
+/* ===== Tablet ===== */
+
 @media (min-width: 768px) {
   .mySwiper {
-    width: 75%;
     padding-inline: 32px;
   }
 }
 
-/* Desktop */
+/* ===== Desktop ===== */
+
 @media (min-width: 1024px) {
   .mySwiper {
-    width: 70%;
     padding-inline: 45px;
   }
 }
->>>>>>> 4a476ec (Implement mobile-first Swiper layout (tablet pending))
