@@ -12,7 +12,88 @@ body {
   font-family: "Manrope";
 }
 
-/* ===== Swiper (Mobile First) ===== */
+.journey-divider {
+  display: none;
+  width: 1px;
+  height: 24rem;
+  margin-top: 2.25rem;
+}
+
+.journey-cta {
+  display: flex;
+  align-items: flex-start;
+}
+
+.journey-line {
+  display: none;
+  width: 10rem;
+  height: 1px;
+}
+
+.journey-arrow {
+  display: none;
+  line-height: 1;
+  margin-top: -8px;
+  margin-left: -5px;
+}
+
+.journey-link {
+  margin-top: -20px;
+  margin-left: 17px;
+  padding-top: 35px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ===== Desktop (1024px+) ===== */
+
+@media (min-width: 1024px) {
+  .journey-divider,
+  .journey-line,
+  .journey-arrow {
+    display: block;
+  }
+
+  .journey-cta {
+    justify-content: flex-start;
+  }
+
+  .journey-link {
+    padding-top: 0px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .journey-link {
+    padding-top: 50px;
+    font-size: 30px;
+  }
+}
+
+/* ===== Laptop (1024px - 1279px) ===== */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .journey-divider,
+  .journey-line,
+  .journey-arrow {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Swiper ===== */
 
 .mySwiper {
   width: 80%;
@@ -48,6 +129,6 @@ body {
 
 @media (min-width: 1024px) {
   .mySwiper {
-    padding-inline: 45px;
+    /* padding-inline: 45px; */
   }
 }
