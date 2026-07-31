@@ -12,6 +12,8 @@ body {
   font-family: "Manrope";
 }
 
+/* ===== Journey ===== */
+
 .journey-divider {
   display: none;
   width: 1px;
@@ -45,8 +47,6 @@ body {
   font-weight: 600;
 }
 
-/* ===== Desktop (1024px+) ===== */
-
 @media (min-width: 1024px) {
   .journey-divider,
   .journey-line,
@@ -59,7 +59,7 @@ body {
   }
 
   .journey-link {
-    padding-top: 0px;
+    padding-top: 0;
     font-size: 30px;
   }
 }
@@ -71,8 +71,6 @@ body {
   }
 }
 
-/* ===== Laptop (1024px - 1279px) ===== */
-
 @media (min-width: 1024px) and (max-width: 1279px) {
   .journey-divider,
   .journey-line,
@@ -80,18 +78,6 @@ body {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ===== Swiper ===== */
 
@@ -125,10 +111,19 @@ body {
   }
 }
 
-/* ===== Desktop ===== */
+/* ===== Laptop (1024px - 1279px) ===== */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .mySwiper {
-    /* padding-inline: 45px; */
+    padding-inline: 20px;
+    margin-top: 140px; 
+  }
+}
+
+/* ===== Desktop (1280px+) ===== */
+
+@media (min-width: 1280px) {
+  .mySwiper {
+    padding-inline: 45px;
   }
 }
