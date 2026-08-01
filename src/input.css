@@ -103,6 +103,29 @@ body {
   height: 180px;
 }
 
+/* ===== Swiper Pagination ===== */
+
+.mySwiper {
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+}
+
+.mySwiper .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: #fff !important;
+  opacity: 0.5;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+  opacity: 1;
+}
+
 /* ===== Tablet ===== */
 
 @media (min-width: 768px) {
@@ -116,7 +139,7 @@ body {
 @media (min-width: 1024px) and (max-width: 1279px) {
   .mySwiper {
     padding-inline: 20px;
-    margin-top: 140px; 
+    margin-top: 140px;
   }
 }
 
