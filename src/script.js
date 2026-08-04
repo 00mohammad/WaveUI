@@ -1,13 +1,8 @@
-const swiper = new Swiper(".mySwiper", {
+const swiperOptions = {
   loop: true,
 
   slidesPerView: 1,
   spaceBetween: 20,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 
   autoplay: {
     delay: 3000,
@@ -15,40 +10,54 @@ const swiper = new Swiper(".mySwiper", {
   },
 
   breakpoints: {
-    // Mobile
     375: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
 
-    // Small Tablet
     640: {
       slidesPerView: 1,
       spaceBetween: 30,
     },
 
-    // Tablet
     768: {
       slidesPerView: 2,
       spaceBetween: 40,
     },
 
-    // Laptop 1024px
     1024: {
       slidesPerView: 2,
       spaceBetween: 45,
     },
 
-    // Desktop
     1280: {
       slidesPerView: 3,
       spaceBetween: 45,
     },
 
-    // Wide Desktop
     1440: {
       slidesPerView: 3,
       spaceBetween: 60,
     },
+  },
+};
+
+// Destinations Slider
+new Swiper(".destinationsSwiper", {
+  ...swiperOptions,
+
+  pagination: {
+    el: ".destinationsSwiper .swiper-pagination",
+    clickable: true,
+  },
+});
+
+// Testimonials Slider
+new Swiper(".testimonialSwiper", {
+  ...swiperOptions,
+
+  pagination: {
+    el: ".testimonialSwiper .swiper-pagination",
+    clickable: true,
   },
 });
