@@ -316,65 +316,112 @@
 
       <!-- Testimonials Section -->
 
-      <section class="swiper testimonialSwiper pt-24 pb-10 py-5">
+      <section
+        class="swiper testimonialSwiper relative overflow-hidden py-24 bg-[url('/src/img/rejuvenation.png') bg-center bg-no-repeat bg-cover">
 
-        <h2 class="text-center text-5xl pt-24 pb-10 font-semibold">
+        <h2 class="pb-10 pt-24 text-center text-5xl font-semibold">
           Our Testimonials
         </h2>
 
-        <div
-          class="swiper-wrapper bg-[url('/src/img/rejuvenation.png')] bg-center bg-no-repeat bg-contain">
+        <div class="swiper-wrapper pb-24">
+
+          <!-- Card 1 -->
 
           <div class="swiper-slide">
 
-            <!-- Card 1 -->
-
-            <div
-              class="bg-gradient-to-br p-8 from-white/15 to-white/5 backdrop-blur-[25%] transition-all duration-300">
+            <article
+              class="bg-gradient-to-br from-white/15 to-white/5 p-8 backdrop-blur-[25px] transition-all duration-300">
 
               <div class="flex flex-col items-center text-center">
 
                 <img
                   src="./src/img/Frame-40.png"
                   alt="Clara Walker"
-                  class="mb-6 w-6 h-6 object-contain">
+                  class="mb-6 h-16 w-16 object-contain">
 
                 <p class="mb-8 max-w-sm text-base leading-7 text-white/80">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
 
-                <div>
-                  <p class="text-lg font-semibold tracking-wide text-white">
-                    Clara Walker
-                  </p>
-                </div>
+                <p class="text-lg font-semibold tracking-wide text-white">
+                  Clara Walker
+                </p>
 
               </div>
 
-            </div>
-
-            <div class="swiper-slide">
-
-              <!-- Card 2 -->
-
-            </div>
-
-            <div class="swiper-slide">
-
-              <!-- Card 3 -->
-
-            </div>
+            </article>
 
           </div>
 
-          <!-- <div class="swiper-pagination"></div> -->
+          <!-- Card 2 -->
 
-        </section>
+          <div class="swiper-slide">
 
-      </main>
+            <article
+              class="bg-gradient-to-br from-white/15 to-white/5 p-8 backdrop-blur-[25px] transition-all duration-300">
 
-      <script
-        src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="./src/script.js"></script>
-    </body>
+              <div class="flex flex-col items-center text-center">
+
+                <img
+                  src="./src/img/Frame-41.png"
+                  alt="John Smith"
+                  class="mb-6 h-16 w-16 object-contain">
+
+                <p class="mb-8 max-w-sm text-base leading-7 text-white/80">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <p class="text-lg font-semibold tracking-wide text-white">
+                  Benjamin & Melissa
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="swiper-slide">
+
+            <article
+              class="bg-gradient-to-br from-white/15 to-white/5 p-8 backdrop-blur-[25px] transition-all duration-300">
+
+              <div class="flex flex-col items-center text-center">
+
+                <img
+                  src="./src/img/Frame-42.png"
+                  alt="Emily Davis"
+                  class="mb-6 h-16 w-16 object-contain">
+
+                <p class="mb-8 max-w-sm text-base leading-7 text-white/80">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <p class="text-lg font-semibold tracking-wide text-white">
+                  The Sellers Family
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </section>
+
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script src="./src/script.js"></script>
+  </body>
