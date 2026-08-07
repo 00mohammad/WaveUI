@@ -47,6 +47,19 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 375px) {
+  .journey-link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .journey-link {
+    padding-top: 50px;
+    font-size: 32px;
+  }
+}
+
 @media (min-width: 1024px) {
   .journey-divider,
   .journey-line,
@@ -64,13 +77,6 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
-  .journey-link {
-    padding-top: 50px;
-    font-size: 30px;
-  }
-}
-
 @media (min-width: 1024px) and (max-width: 1279px) {
   .journey-divider,
   .journey-line,
@@ -79,13 +85,17 @@ body {
   }
 }
 
-/* ===== Swiper ===== */
+/* ===== Swiper Base ===== */
 
 .swiper {
   width: 80%;
   padding-inline: 24px;
   padding-bottom: 60px;
   margin-top: 100px;
+
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
 }
 
 .swiper .swiper-slide {
@@ -104,12 +114,6 @@ body {
 }
 
 /* ===== Swiper Pagination ===== */
-
-.swiper {
-  --swiper-pagination-color: #fff;
-  --swiper-pagination-bullet-inactive-color: #fff;
-  --swiper-pagination-bullet-inactive-opacity: 0.5;
-}
 
 .swiper .swiper-pagination {
   position: relative;

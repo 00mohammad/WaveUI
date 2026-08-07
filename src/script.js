@@ -43,6 +43,7 @@ const swiperOptions = {
 };
 
 // Destinations Slider
+
 new Swiper(".destinationsSwiper", {
   ...swiperOptions,
 
@@ -53,6 +54,7 @@ new Swiper(".destinationsSwiper", {
 });
 
 // Testimonials Slider
+
 new Swiper(".testimonialSwiper", {
   ...swiperOptions,
 
