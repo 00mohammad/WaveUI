@@ -1,4 +1,19 @@
+const journeyLink = document.querySelector(".journey-link");
+const destination = document.querySelector("#destination");
+
+journeyLink.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  destination.classList.remove("hidden");
+
+  destination.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+});
+
 const swiperOptions = {
+  
   loop: true,
 
   slidesPerView: 1,
