@@ -16,18 +16,18 @@ https://www.figma.com/design/ZU81y6D1wp6ZKRBDpM0m58/-Discover-The-Water---Oceani
 ## 🚀 Live Demo
 
 🟡 Coming soon  
-🔗 https://your-demo-link.com
+🔗 https://00mohammad.github.io/WaveUI/
 
 ---
 
 ## 📱 Responsive Design
 
-| Device | Preview |
-|--------|--------|
-| 🖥 Desktop (1440px+) | ![Desktop](./src/Screenshot/Desktop%20-%201440px.png) |
-| 💻 Tablet (1024px) | ![Tablet](./src/Screenshot/Tablet%20-%201024px.png) |
-| 📟 Small Tablet (744px) | ![Small Tablet](./src/Screenshot/Tablet%20(Small)%20-%20744px.png) |
-| 📱 Mobile (375px) | ![Mobile](./src/Screenshot/Mobile%20-%20375px.png) |
+| Device                  | Preview                                                              |
+| ----------------------- | -------------------------------------------------------------------- |
+| 🖥 Desktop (1440px+)    | ![Desktop](./src/Screenshot/Desktop%20-%201440px.png)                |
+| 💻 Tablet (1024px)      | ![Tablet](./src/Screenshot/Tablet%20-%201024px.png)                  |
+| 📟 Small Tablet (744px) | ![Small Tablet](<./src/Screenshot/Tablet%20(Small)%20-%20744px.png>) |
+| 📱 Mobile (375px)       | ![Mobile](./src/Screenshot/Mobile%20-%20375px.png)                   |
 
 ---
 
