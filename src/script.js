@@ -1,19 +1,20 @@
-const journeyLink = document.querySelector(".journey-link");
 const destination = document.querySelector("#destination");
+const journeyLink = document.querySelector(".journey-link");
+
+// Open Modal
 
 journeyLink.addEventListener("click", function (event) {
   event.preventDefault();
-
   destination.classList.remove("hidden");
+});
 
-  destination.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
+// Close Modal
+
+destination.addEventListener("click", function () {
+  destination.classList.add("hidden");
 });
 
 const swiperOptions = {
-  
   loop: true,
 
   slidesPerView: 1,
