@@ -24,7 +24,7 @@
 
     <header
       class="relative h-[1011px] md:h-[917px] lg:h-[652px] xl:h-[926px] bg-cover bg-center bg-no-repeat"
-      style="background-image: url('./src/img/Frame1.png');">
+      style="background-image: url('./src/img/ocean-hero-background.png');">
 
       <!-- Navbar -->
 
@@ -35,7 +35,7 @@
 
         <div class="flex items-center gap-2.5">
           <img
-            src="./src/svg/Mask group.svg"
+            src="./src/svg/oceanica-logo-mark.svg"
             alt="Oceanica Logo"
             class="h-7 w-8" />
 
@@ -62,7 +62,8 @@
         <!-- Button -->
 
         <a
-          href="#"
+          href="#destination"
+          data-open-destination
           class="ml-auto hidden text-2xl font-bold text-primary transition-opacity hover:opacity-80 md:block">
           Start a Journey
         </a>
@@ -70,8 +71,11 @@
         <!-- Mobile Menu -->
 
         <button
+          id="nav-toggle"
           class="group ml-auto rounded-lg p-2 transition-colors md:hidden"
-          aria-label="Open menu">
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8 transition-colors group-hover:text-primary"
@@ -87,6 +91,27 @@
         </button>
 
       </nav>
+
+      <div
+        id="mobile-menu"
+        class="absolute left-0 right-0 top-full z-30 hidden border-t border-white/10 bg-bg/95 px-6 py-5 backdrop-blur-xl md:hidden">
+        <ul class="space-y-4 text-xl text-white">
+          <li
+            class="cursor-pointer transition-colors hover:text-primary">Home</li>
+          <li
+            class="cursor-pointer transition-colors hover:text-primary">Tours</li>
+          <li
+            class="cursor-pointer transition-colors hover:text-primary">Contact</li>
+          <li>
+            <a
+              href="#destination"
+              data-open-destination
+              class="inline-block text-primary transition-opacity hover:opacity-80">
+              Start a Journey
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <!-- Hero -->
 
@@ -117,28 +142,37 @@
             </span>
 
             <a
-              href="#"
-              class="journey-link text-muted">
+              href="#destination"
+              class="journey-link text-muted"
+              data-open-destination>
               Start Your Journey Today
             </a>
 
             <div
               id="destination"
-              class="fixed inset-0 z-50 hidden flex items-center justify-center overflow-y-auto bg-black/50 p-4">
+              class="fixed inset-0 z-50 hidden items-center justify-center overflow-y-auto bg-black/50 p-4">
 
               <div
-                class="aspect-[597/800] bg-bg w-full max-w-[597px] rounded-xl bg-center bg-no-repeat"
-                style="background-image: url('./src/img/book-today.png'); background-size: 100% 20%; background-position: center; background-repeat: no-repeat;">
+                class="aspect-[597/800] w-full max-w-[597px] rounded-xl bg-bg bg-center bg-no-repeat"
+                style="background-image: url('./src/img/booking-modal-cover.png'); background-size: 100% 20%; background-position: center; background-repeat: no-repeat;">
 
                 <article
                   class="flex h-full flex-col items-center px-6 pt-12 text-center">
+
+                  <button
+                    type="button"
+                    class="ml-auto mr-2 text-xl text-white/80 transition hover:text-white"
+                    data-close-destination
+                    aria-label="Close destination modal">
+                    ×
+                  </button>
 
                   <h2 class="mb-[7%] text-2xl font-medium sm:text-3xl">
                     Choose your destination
                   </h2>
 
                   <img
-                    src="./src/img/Frame2.png"
+                    src="./src/img/punta-monita-destination.png"
                     alt="Punta Monita destination"
                     loading="lazy"
                     class="mb-[5%] h-auto w-[67%] rounded-sm object-cover">
@@ -274,7 +308,7 @@
       <!-- Destinations Section -->
 
       <section
-        class="swiper destinationsSwiper relative overflow-hidden bg-[url('/src/img/historic-destinations.png')] bg-center bg-no-repeat bg-contain px-6 py-24 lg:px-8 xl:px-[200px]">
+        class="swiper destinationsSwiper relative overflow-hidden bg-[url('/src/img/historic-destinations-background.png')] bg-center bg-no-repeat bg-contain px-6 py-24 lg:px-8 xl:px-[200px]">
 
         <div class="swiper-wrapper mt-10 lg:mt-28">
 
@@ -285,7 +319,7 @@
             <article class="text-center sm:text-left">
 
               <img
-                src="./src/img/Frame2.png"
+                src="./src/img/punta-monita-destination.png"
                 alt="Punta Monita destination"
                 loading="lazy"
                 class="h-[300px] w-full rounded-xl object-cover">
@@ -318,7 +352,7 @@
             <article class="text-center sm:text-left">
 
               <img
-                src="./src/img/Frame2.png"
+                src="./src/img/punta-monita-destination.png"
                 alt="Punta Monita destination"
                 loading="lazy"
                 class="h-[300px] w-full rounded-xl object-cover">
@@ -351,7 +385,7 @@
             <article class="text-center sm:text-left">
 
               <img
-                src="./src/img/Frame2.png"
+                src="./src/img/punta-monita-destination.png"
                 alt="Punta Monita destination"
                 loading="lazy"
                 class="h-[300px] w-full rounded-xl object-cover">
@@ -388,7 +422,7 @@
       <!-- Testimonials Section -->
 
       <section
-        class="swiper testimonialSwiper relative overflow-hidden bg-[url('/src/img/rejuvenation.png')] bg-center bg-no-repeat bg-cover py-24">
+        class="swiper testimonialSwiper relative overflow-hidden bg-[url('/src/img/rejuvenation-background.png')] bg-center bg-no-repeat bg-cover py-24">
 
         <h2
           class="pb-10 text-center font-semibold text-[37px] text-white">
@@ -407,7 +441,7 @@
               <div class="flex flex-col items-center text-center">
 
                 <img
-                  src="./src/img/Frame-40.png"
+                  src="./src/img/traveler-portrait-01.png"
                   alt="Clara Walker"
                   loading="lazy"
                   class="mb-6 h-16 w-16 object-contain">
@@ -436,7 +470,7 @@
               <div class="flex flex-col items-center text-center">
 
                 <img
-                  src="./src/img/Frame-41.png"
+                  src="./src/img/traveler-portrait-02.png"
                   alt="Benjamin and Melissa"
                   loading="lazy"
                   class="mb-6 h-16 w-16 object-contain">
@@ -465,7 +499,7 @@
               <div class="flex flex-col items-center text-center">
 
                 <img
-                  src="./src/img/Frame-42.png"
+                  src="./src/img/traveler-portrait-03.png"
                   alt="The Sellers Family"
                   loading="lazy"
                   class="mb-6 h-16 w-16 object-contain">
@@ -509,7 +543,7 @@
              lg:justify-start">
 
           <img
-            src="./src/svg/Mask group.svg"
+            src="./src/svg/oceanica-logo-mark.svg"
             alt="Oceanica Logo"
             class="h-7 w-8" />
 
@@ -679,23 +713,23 @@
          md:gap-10">
 
         <img
-          src="./src/img/Vector1.png"
+          src="./src/img/social-icon-01.png"
           alt />
 
         <img
-          src="./src/img/Vector2.png"
+          src="./src/img/social-icon-02.png"
           alt />
 
         <img
-          src="./src/img/Vector3.png"
+          src="./src/img/social-icon-03.png"
           alt />
 
         <img
-          src="./src/img/Vector4.png"
+          src="./src/img/social-icon-04.png"
           alt />
 
         <img
-          src="./src/img/Vector5.png"
+          src="./src/img/social-icon-05.png"
           alt />
 
       </div>

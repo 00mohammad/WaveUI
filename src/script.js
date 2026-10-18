@@ -1,17 +1,44 @@
 const destination = document.querySelector("#destination");
-const journeyLink = document.querySelector(".journey-link");
+const journeyLinks = document.querySelectorAll("[data-open-destination]");
+const closeDestinationButton = document.querySelector("[data-close-destination]");
+const navToggle = document.querySelector("#nav-toggle");
+const mobileMenu = document.querySelector("#mobile-menu");
 
-// Open Modal
-
-journeyLink.addEventListener("click", function (event) {
-  event.preventDefault();
+const openDestination = (event) => {
+  if (event) event.preventDefault();
+  if (!destination) return;
   destination.classList.remove("hidden");
+  destination.classList.add("flex");
+};
+
+const closeDestination = () => {
+  if (!destination) return;
+  destination.classList.add("hidden");
+  destination.classList.remove("flex");
+};
+
+journeyLinks.forEach((link) => {
+  link.addEventListener("click", openDestination);
 });
 
-// Close Modal
+destination?.addEventListener("click", (event) => {
+  if (event.target === destination) {
+    closeDestination();
+  }
+});
 
-destination.addEventListener("click", function () {
-  destination.classList.add("hidden");
+closeDestinationButton?.addEventListener("click", closeDestination);
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !destination?.classList.contains("hidden")) {
+    closeDestination();
+  }
+});
+
+navToggle?.addEventListener("click", () => {
+  const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+  navToggle.setAttribute("aria-expanded", String(!isExpanded));
+  mobileMenu?.classList.toggle("hidden", isExpanded);
 });
 
 const swiperOptions = {
