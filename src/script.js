@@ -42,7 +42,7 @@ navToggle?.addEventListener("click", () => {
 });
 
 const swiperOptions = {
-  loop: true,
+  loop: false,
 
   slidesPerView: 1,
   spaceBetween: 20,
